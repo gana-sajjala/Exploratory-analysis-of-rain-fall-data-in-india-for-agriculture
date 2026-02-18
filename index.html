@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Crop Recommendation System</h1>
+
+      <form id="rainfallForm" class="form" autocomplete="off">
+        <label for="month1">Rainfall Month 1 (mm)</label>
+        <input
+          type="number"
+          id="month1"
+          name="month1"
+          min="0"
+          step="any"
+          placeholder="Enter rainfall in mm"
+          required
+        />
+
+        <label for="month2">Rainfall Month 2 (mm)</label>
+        <input
+          type="number"
+          id="month2"
+          name="month2"
+          min="0"
+          step="any"
+          placeholder="Enter rainfall in mm"
+          required
+        />
+
+        <label for="month3">Rainfall Month 3 (mm)</label>
+        <input
+          type="number"
+          id="month3"
+          name="month3"
+          min="0"
+          step="any"
+          placeholder="Enter rainfall in mm"
+          required
+        />
+
+        <button type="submit" class="btn">Get Recommendation</button>
+      </form>
+
+      <section id="result" class="result"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

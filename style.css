@@ -1,0 +1,115 @@
+/* Background image covering full page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80')
+      center/cover no-repeat fixed;
+  color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 15px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #2c3e50;
+  max-width: 420px;
+  width: 100%;
+  padding: 35px 30px 45px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 0.05em;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #334e68;
+  text-align: left;
+}
+
+.form input[type='number'] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input[type='number']:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 14px 0;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1e40af;
+}
+
+.result {
+  margin-top: 35px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e40af;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result img {
+  margin-top: 18px;
+  max-width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 22px 40px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+}
